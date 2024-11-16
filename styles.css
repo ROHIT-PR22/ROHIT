@@ -1,0 +1,115 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set anime background image for the entire page */
+body {
+    background-image: url('https://images.app.goo.gl/69pJpBUxDUiDe3RZ9');
+    /* Replace with your own anime background image */
+    background-size: cover;
+    /* Ensure the image covers the screen */
+    background-position: center center;
+    background-attachment: fixed;
+    /* Keep the background fixed while scrolling */
+    font-family: Arial, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container */
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    /* Dark overlay for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+/* Anime list styling */
+#anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.anime-item {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.anime-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.anime-item h3 {
+    margin: 10px 0;
+}
+
+.anime-item p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.anime-item button {
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+}
+
+.anime-item button:hover {
+    background-color: #cc0000;
+}

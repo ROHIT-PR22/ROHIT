@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Watchlist Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Anime Watchlist</h1>
+
+        <!-- Form to Add Anime -->
+        <form id="anime-form">
+            <input type="text" id="anime-title" placeholder="Anime Title" required />
+            <input type="text" id="anime-genre" placeholder="Genre" required />
+            <textarea id="anime-description" placeholder="Description" required></textarea>
+            <input type="number" id="anime-rating" placeholder="Rating (1-5)" min="1" max="5" required />
+            <input type="url" id="anime-image" placeholder="Image URL" required />
+            <button type="submit">Add Anime</button>
+        </form>
+
+        <!-- Genre Filter -->
+        <div id="filters">
+            <label for="genre-filter">Filter by Genre: </label>
+            <select id="genre-filter">
+                <option value="all">All Genres</option>
+                <option value="action">Action</option>
+                <option value="romance">Romance</option>
+                <option value="fantasy">Fantasy</option>
+                <!-- More genres can be added here -->
+            </select>
+        </div>
+
+        <!-- Anime List -->
+        <div id="anime-list"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
